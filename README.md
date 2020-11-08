@@ -4,11 +4,15 @@ Desenvolvimento do primeiro projeto em Node.js para CRUD de repositórios.
 
 Obrigado para você que está corrigindo! Você poderia estar fazendo outra coisa mas separou este tempo para corrigir meu trabalho! <3
 
+
 ## Execução do projeto
 
 Para execução do projeto, considerar o arquivo *requests.rest* disposta na pasta raíz do projeto para as requisições para o **app.js**.
 
+
 ## Sugestão de uso do arquivo requests.rest:
+
+Este arquivo tem por finalidade facilitar a correção do desafio.
 
 Adicione a extensão REST Client ao seu VS Code (caso ainda não possua).
 

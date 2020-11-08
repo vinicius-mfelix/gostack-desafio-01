@@ -1,0 +1,62 @@
+# Requisição de listagem de todos os repositórios
+GET http://localhost:3333/repositories HTTP/1.1
+Accept: application/json
+
+###
+
+# Requisição de cadastro de novo repositório
+POST http://localhost:3333/repositories HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+	"title": "flutter",
+	"url": "https://github.com/flutter/flutter",
+	"techs": [
+		"Dart"
+	]
+}
+
+###
+
+@repoId = Replace here the repo id (without quotes and spaces).
+
+###
+
+# Requisição de likes em um repositorio existente
+POST http://localhost:3333/repositories/{{repoId}}/like HTTP/1.1
+Accept: application/json
+
+###
+
+# Requisição de atualização de um repositório existente
+PUT http://localhost:3333/repositories/{{repoId}} HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+	"title": "react-native",
+	"url": "https://github.com/facebook/react-native",
+	"techs": [
+		"JavaScript",
+    "TypeScript"
+	]
+}
+
+###
+
+# Requisição de listagem de todos os repositórios (atualizados)
+GET http://localhost:3333/repositories HTTP/1.1
+Accept: application/json
+
+###
+
+# Requisição de remoção de um repositório
+DELETE http://localhost:3333/repositories/{{repoId}} HTTP/1.1
+Accept: application/json
+
+###
+
+# Requisição de listagem de todos os repositórios (atualizados)
+GET http://localhost:3333/repositories HTTP/1.1
+Accept: application/json

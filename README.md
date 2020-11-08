@@ -8,7 +8,7 @@ Obrigado para você que está corrigindo! Você poderia estar fazendo outra cois
 
 Para execução do projeto, considerar o arquivo *requests.rest* disposta na pasta raíz do projeto para as requisições para o **app.js**.
 
-# Sugestão de uso do arquivo requests.rest:
+## Sugestão de uso do arquivo requests.rest:
 
 Adicione a extensão REST Client ao seu VS Code (caso ainda não possua).
 
